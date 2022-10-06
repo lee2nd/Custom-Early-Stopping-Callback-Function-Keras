@@ -13,5 +13,5 @@ class EarlyStoppingByLimits(Callback):
 			self.model.stop_training = True
       
 ## used like this
-early_stop = EarlyStoppingByLimits (train_limit=0.75, val_limit=0.85)
+early_stop = EarlyStoppingByLimits(train_limit=0.75, val_limit=0.85)
 model.fit(train_ds, epochs=100, validation_data=valid_ds, callbacks=[early_stop])
